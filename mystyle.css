@@ -1,0 +1,193 @@
+/* Resetowanie marginesów, paddingów i box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Podstawowe style strony */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Stylizowanie nagłówka */
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: relative;
+}
+
+/* Tytuł szkoły w nagłówku */
+header h1 {
+    float: left;
+    margin-left: 20px;
+    font-size: 28px;
+}
+
+/* Stylizowanie menu nawigacyjnego */
+nav {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px; /* Większa przestrzeń między linkami */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px; /* Większa czcionka */
+    padding: 10px 20px; /* Więcej miejsca wokół tekstu */
+    border-radius: 5px; /* Zaokrąglone rogi */
+    transition: background 0.3s ease; /* Efekt przejścia przy hover */
+}
+
+nav ul li a:hover {
+    background-color: #f44336; /* Zmiana koloru tła po najechaniu */
+}
+
+/* Stylizacja sekcji hero (główna) */
+.hero {
+    position: relative; /* Ustawienie pozycji, aby nakładka mogła być położona na tło */
+    background: url('images/carstart.jpg') no-repeat center center/cover;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Półprzezroczysta ciemna nakładka */
+    z-index: 1; /* Umieszczenie nakładki pod tekstem */
+}
+
+.hero .container {
+    position: relative;
+    z-index: 2; /* Tekst jest wyżej niż nakładka */
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 48px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Cień dla poprawy czytelności */
+}
+
+.hero p {
+    font-size: 20px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.hero .button {
+    padding: 10px 20px;
+    background-color: #ff5722;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.hero .button:hover {
+    background-color: #e64a19;
+}
+
+/* Style dla sekcji O nas */
+#about {
+    padding: 40px 0;
+    background-color: #f9f9f9;
+}
+
+#about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Style dla sekcji historii */
+.history-section {
+    padding: 40px 0;
+    background-color: #fff;
+}
+
+.history-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.history-section p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* Style dla sekcji osiągnięć */
+.achievements-section {
+    padding: 40px 0;
+    background-color: #f4f4f4;
+}
+
+.achievements-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.achievements-section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.achievements-section ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* Ogólne style dla sekcji */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
