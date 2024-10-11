@@ -191,3 +191,76 @@ footer p {
     margin: 0;
     font-size: 14px;
 }
+
+/* Styl dla sekcji kursów */
+#courses {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+#courses h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#courses p {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Styl dla siatki kursów z jedną kolumną */
+.course-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Styl dla większych kwadratowych boxów kursów */
+.course-box {
+    background-color: #fff;
+    padding: 40px;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course-box:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.course-box h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.course-box p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+/* Styl dla przycisków */
+.course-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.course-btn:hover {
+    background-color: #0056b3;
+}
+
+
