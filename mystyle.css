@@ -7,7 +7,6 @@
 
 /* Podstawowe style strony */
 body {
-    padding-top: 70px; /* Dostosuj do wysokości nagłówka */
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
@@ -21,14 +20,10 @@ body {
 
 /* Stylizowanie nagłówka */
 header {
-    position: fixed;
-    top: 0;
-    width: 100%;
     background: #333;
     color: #fff;
     padding: 10px 0;
-    z-index: 1000; /* Aby nagłówek był nad resztą elementów */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Opcjonalny cień dla efektu */
+    position: relative;
 }
 
 /* Tytuł szkoły w nagłówku */
@@ -39,6 +34,7 @@ header h1 {
 }
 
 /* Stylizowanie menu nawigacyjnego */
+/* Stylizowanie menu nawigacyjnego */
 nav {
     float: right;
     margin-right: 20px;
@@ -46,6 +42,7 @@ nav {
 
 nav ul {
     list-style: none;
+    padding: 0; /* Usunięcie domyślnego paddingu */
 }
 
 nav ul li {
@@ -57,9 +54,11 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 18px; /* Większa czcionka */
-    padding: 10px 20px; /* Więcej miejsca wokół tekstu */
-    border-radius: 5px; /* Zaokrąglone rogi */
+    padding: 10px 15px; /* Więcej miejsca wokół tekstu */
+    border-radius: 10px; /* Bardziej zaokrąglone rogi */
+    line-height: 1.5; /* Wysokość linii dla lepszego wyśrodkowania */
     transition: background 0.3s ease; /* Efekt przejścia przy hover */
+    display: inline-block; /* Umożliwia wyśrodkowanie tekstu */
 }
 
 nav ul li a:hover {
