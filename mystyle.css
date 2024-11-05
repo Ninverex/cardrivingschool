@@ -7,6 +7,7 @@
 
 /* Podstawowe style strony */
 body {
+    padding-top: 70px; /* Dostosuj do wysokości nagłówka */
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
@@ -20,10 +21,14 @@ body {
 
 /* Stylizowanie nagłówka */
 header {
+    position: fixed;
+    top: 0;
+    width: 100%;
     background: #333;
     color: #fff;
     padding: 10px 0;
-    position: relative;
+    z-index: 1000; /* Aby nagłówek był nad resztą elementów */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Opcjonalny cień dla efektu */
 }
 
 /* Tytuł szkoły w nagłówku */
