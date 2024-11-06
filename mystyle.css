@@ -6,7 +6,9 @@
 }
 
 /* Podstawowe style strony */
+
 body {
+    padding-top: 70px; /* Dostosuj do wysokości nagłówka */
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
@@ -25,6 +27,17 @@ header {
     padding: 10px 0;
     position: relative;
 }
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    z-index: 1000; /* Aby nagłówek był nad resztą elementów */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Opcjonalny cień dla efektu */
+}
+
 
 /* Tytuł szkoły w nagłówku */
 header h1 {
@@ -401,6 +414,99 @@ footer p {
     height: 250px;
     border: 0;
     border-radius: 10px;
+}
+
+/* Sekcja galerii */
+#gallery {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#gallery h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+#gallery p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+/* Stylizacja slajdera */
+.slider {
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    min-width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Powiększenie i umieszczenie strzałek przy krawędziach zdjęcia */
+.slider .nav-arrow {
+    font-size: 36px; /* Powiększenie strzałek */
+    color: white;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5); /* Półprzezroczyste tło dla widoczności */
+    padding: 10px;
+    border-radius: 50%; /* Zaokrąglenie strzałek */
+    z-index: 10;
+}
+
+.slider .nav-arrow.left {
+    left: 10px; /* Umieszczenie strzałki przy lewym boku */
+}
+
+.slider .nav-arrow.right {
+    right: 10px; /* Umieszczenie strzałki przy prawym boku */
+}
+
+/* Opcjonalne efekty dla najechania myszą */
+.slider .nav-arrow:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Ciemniejsze tło na hover */
+}
+
+
+/* Obsługa widoczności slajdów przez radio */
+#slide1:checked ~ .slides {
+    transform: translateX(0%);
+}
+#slide2:checked ~ .slides {
+    transform: translateX(-100%);
+}
+#slide3:checked ~ .slides {
+    transform: translateX(-200%);
+}
+
+/* Zmiana koloru przycisków nawigacyjnych dla aktywnego slajdu */
+#slide1:checked ~ .navigation label[for="slide1"],
+#slide2:checked ~ .navigation label[for="slide2"],
+#slide3:checked ~ .navigation label[for="slide3"] {
+    background-color: #333;
+}
+/* Ukrycie przycisków radiowych */
+.slider input[type="radio"] {
+    display: none;
 }
 
 
