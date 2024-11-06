@@ -145,7 +145,6 @@ nav ul li a:hover {
     font-size: 36px;
     color: #333;
     margin-bottom: 40px;
-    text-transform: uppercase;
 }
 
 .about-content {
@@ -427,7 +426,6 @@ footer p {
     font-size: 36px;
     color: #333;
     margin-bottom: 20px;
-    text-transform: uppercase;
 }
 
 #gallery p {
@@ -444,7 +442,7 @@ footer p {
     margin: 0 auto;
     overflow: hidden;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px trans(0, 0, 0, 0.01);
 }
 
 .slides {
