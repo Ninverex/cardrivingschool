@@ -80,7 +80,7 @@ nav ul li a:hover {
 
 /* Stylizacja sekcji hero (główna) */
 .hero {
-    position: relative; 
+    position: relative;
     background: url('images/carstart.jpg') no-repeat center center/cover;
     height: 100vh;
     display: flex;
@@ -174,7 +174,7 @@ nav ul li a:hover {
 }
 
 .about-image img {
-    max-width: 100%;
+    max-width: 75%;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
