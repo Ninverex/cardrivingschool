@@ -326,7 +326,7 @@ footer p {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    
+
 }
 
 /* Stylizacja formularza kontaktowego */
@@ -420,6 +420,11 @@ footer p {
     border: 0;
     border-radius: 10px;
 }
+#mapsite {
+    frameborder: 0;
+    border: 0px;
+    allowfullscreen: none;
+}
 
 /* Sekcja galerii */
 #gallery {
@@ -448,7 +453,7 @@ footer p {
     margin: 0 auto;
     overflow: hidden;
     border-radius: 10px;
-    box-shadow: 0 4px 10px trans(0, 0, 0, 0.01);
+    box-shadow: 0 4px 10px transparent(0, 0, 0, 0.01);
 }
 
 .slides {
@@ -474,7 +479,7 @@ footer p {
     background-color: rgba(0, 0, 0, 0.5); /* Półprzezroczyste tło dla widoczności */
     padding: 10px;
     border-radius: 50%; /* Zaokrąglenie strzałek */
-    z-index: 10;
+
 }
 
 .slider .nav-arrow.left {
@@ -498,14 +503,11 @@ footer p {
 #slide2:checked ~ .slides {
     transform: translateX(-100%);
 }
-#slide3:checked ~ .slides {
-    transform: translateX(-200%);
-}
+
 
 /* Zmiana koloru przycisków nawigacyjnych dla aktywnego slajdu */
 #slide1:checked ~ .navigation label[for="slide1"],
-#slide2:checked ~ .navigation label[for="slide2"],
-#slide3:checked ~ .navigation label[for="slide3"] {
+#slide2:checked ~ .navigation label[for="slide2"] {
     background-color: #333;
 }
 /* Ukrycie przycisków radiowych */
