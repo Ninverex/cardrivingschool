@@ -1,14 +1,12 @@
-/* Resetowanie marginesów, paddingów i box-sizing */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Podstawowe style strony */
 
 body {
-    padding-top: 70px; /* Dostosuj do wysokości nagłówka */
+    padding-top: 70px;
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
@@ -20,7 +18,6 @@ body {
     overflow: hidden;
 }
 
-/* Stylizowanie nagłówka */
 header {
     background: #333;
     color: #fff;
@@ -39,15 +36,12 @@ header {
 }
 
 
-/* Tytuł szkoły w nagłówku */
 header h1 {
     float: left;
     margin-left: 20px;
     font-size: 28px;
 }
 
-/* Stylizowanie menu nawigacyjnego */
-/* Stylizowanie menu nawigacyjnego */
 nav {
     float: right;
     margin-right: 20px;
@@ -55,30 +49,29 @@ nav {
 
 nav ul {
     list-style: none;
-    padding: 0; /* Usunięcie domyślnego paddingu */
+    padding: 0;
 }
 
 nav ul li {
     display: inline-block;
-    margin-right: 20px; /* Większa przestrzeń między linkami */
+    margin-right: 20px;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 18px; /* Większa czcionka */
-    padding: 10px 15px; /* Więcej miejsca wokół tekstu */
-    border-radius: 10px; /* Bardziej zaokrąglone rogi */
-    line-height: 1.5; /* Wysokość linii dla lepszego wyśrodkowania */
-    transition: background 0.3s ease; /* Efekt przejścia przy hover */
-    display: inline-block; /* Umożliwia wyśrodkowanie tekstu */
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    line-height: 1.5;
+    transition: background 0.3s ease;
+    display: inline-block;
 }
 
 nav ul li a:hover {
-    background-color: #f44336; /* Zmiana koloru tła po najechaniu */
+    background-color: #f44336;
 }
 
-/* Stylizacja sekcji hero (główna) */
 .hero {
     position: relative;
     background: url('images/carstart.jpg') no-repeat center center/cover;
@@ -96,19 +89,19 @@ nav ul li a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Półprzezroczysta ciemna nakładka */
-    z-index: 1; /* Umieszczenie nakładki pod tekstem */
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
 }
 
 .hero .container {
     position: relative;
-    z-index: 2; /* Tekst jest wyżej niż nakładka */
+    z-index: 2;
     text-align: center;
 }
 
 .hero h2 {
     font-size: 48px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Cień dla poprawy czytelności */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
 .hero p {
@@ -188,27 +181,6 @@ footer {
     text-align: center;
 }
 
-/* Style dla sekcji osiągnięć */
-.achievements-section {
-    padding: 40px 0;
-    background-color: #f4f4f4;
-}
-
-.achievements-section h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
-.achievements-section ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-.achievements-section ul li {
-    font-size: 18px;
-    margin-bottom: 10px;
-    color: #555;
-}
 
 /* Ogólne style dla sekcji */
 .container {
@@ -376,7 +348,7 @@ footer p {
     background-color: #e64a19;
 }
 
-/* Stylizacja sekcji z informacjami kontaktowymi */
+
 .contact-info {
     background-color: #fff;
     padding: 30px;
@@ -409,7 +381,7 @@ footer p {
     margin-right: 10px;
 }
 
-/* Stylizacja mapy */
+
 .map-container {
     margin-top: 20px;
 }
@@ -445,7 +417,7 @@ footer p {
     margin-bottom: 40px;
 }
 
-/* Stylizacja slajdera */
+
 .slider {
     position: relative;
     width: 80%;
@@ -468,35 +440,34 @@ footer p {
     background-position: center;
 }
 
-/* Powiększenie i umieszczenie strzałek przy krawędziach zdjęcia */
 .slider .nav-arrow {
-    font-size: 36px; /* Powiększenie strzałek */
+    font-size: 36px;
     color: white;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.5); /* Półprzezroczyste tło dla widoczności */
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 10px;
-    border-radius: 50%; /* Zaokrąglenie strzałek */
+    border-radius: 50%;
 
 }
 
 .slider .nav-arrow.left {
-    left: 10px; /* Umieszczenie strzałki przy lewym boku */
+    left: 10px;
 }
 
 .slider .nav-arrow.right {
-    right: 10px; /* Umieszczenie strzałki przy prawym boku */
+    right: 10px;
 }
 
-/* Opcjonalne efekty dla najechania myszą */
+
 .slider .nav-arrow:hover {
-    background-color: rgba(0, 0, 0, 0.7); /* Ciemniejsze tło na hover */
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 
-/* Obsługa widoczności slajdów przez radio */
+
 #slide1:checked ~ .slides {
     transform: translateX(0%);
 }
@@ -505,12 +476,12 @@ footer p {
 }
 
 
-/* Zmiana koloru przycisków nawigacyjnych dla aktywnego slajdu */
+
 #slide1:checked ~ .navigation label[for="slide1"],
 #slide2:checked ~ .navigation label[for="slide2"] {
     background-color: #333;
 }
-/* Ukrycie przycisków radiowych */
+
 .slider input[type="radio"] {
     display: none;
 }
